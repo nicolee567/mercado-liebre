@@ -3,12 +3,12 @@ const path=require('path');
 
 const app = express();
 
-const publicPath=path.resolve(__dirname, './public');
-
 app.use(express.static(path.join(__dirname,'public')));
 
-app.listen(3010,()=>{
-    console.log('Servidor corriendo en el puerto 3010');
+const port=process.env.PORT || 3001;
+
+app.listen(port,()=>{
+    console.log('Servidor corriendo');
 });
 
 app.get('/',(req,res)=>{
