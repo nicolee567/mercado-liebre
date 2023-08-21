@@ -1,0 +1,313 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb ;
+}
+.main-header{
+    background-color:#EAC926;
+    padding: 20px;
+}
+/*logo mercado liebre*/
+.logo{
+    width:150px;
+} 
+/*texto "compra en cuotas..."*/
+.copy-header{
+    font-weight: 300;
+    text-align: center;
+    font-size: 15px;
+}
+/*banner*/
+section img{
+    width:100%;
+}
+/*titular-basado ultima visita y ofertas*/
+h2.titular{
+    font-size: 24px;
+    padding-left:15px;
+}
+/*lista*/
+.main-navbar ul{
+    list-style:none;
+    margin:0;
+    padding: 0;
+}
+/*lista*/
+.main-navbar ul a{
+    text-decoration:none;
+    color:black;  
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 15px;
+}
+/*menu hamburguesa*/
+.burguer-button{
+    background-color:rgb(53, 91, 186);
+    text-align: center;
+    color:#ebebeb;
+    margin: auto;
+    padding: 7px 0;
+    margin-top: 20px;
+    display: block;
+    max-width:40px;
+    border-radius: 7px;
+    font-size: 17px;
+}
+.icon-footer{
+    text-align: center;
+    color:rgb(53, 91, 186);
+    font-size:2em;
+    line-height: 1px;
+}
+.content-footer{
+    text-align: center;   
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+/*copyright*/
+h5{
+    color:#a9a5a5;
+}
+main{
+    background-color: #ebebeb;
+}
+.main-content{
+    text-align: left;
+    margin:auto;
+    width:90%;
+}
+.articulo-gral{
+    background-color: white;
+    margin: 15px;
+    transition: all .5s;
+}
+ /*sombra*/
+.articulo-gral:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+/*icono camion envio*/
+.product-desc-box{
+    color:#39b54a;
+}
+.product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px; 
+    transition: all 450ms;
+}
+.product-desc-box > .product-delivery-icon:hover{
+    transform: rotateZ(-90deg);
+}
+.product-desc-box {
+    position: relative;
+}
+.precio{
+    font-size: 18px;
+    flex-grow:0.3;
+}
+.descuento{
+    font-size: 18px;
+    color:#39b54a;
+    font-weight: lighter; 
+    flex-grow:0.7;
+}
+.nombre{
+    font-size: 16px;
+    color:#9f9f9f;
+    text-align: left;
+    padding-top:20px;
+    opacity: 0;
+    transition: opacity 450ms;
+}
+.nombre:hover{
+    opacity: 1;
+}
+.product-desc-box{
+    /*linea arriba*/
+    border-top:solid 1px #ebebeb;
+    /*distancia entre articulos*/
+    padding: 15px;
+}
+.mismo-renglon{
+    display: flex;
+    justify-content: flex-start;
+}
+/*Formulario Registro*/
+.form-register{
+    padding:50px 100px;
+}
+.control-formulario{
+    margin-bottom:25px;
+}
+.control-formulario label{
+    margin-bottom: 15px;
+}
+.control{
+    width:70%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border:0;
+}
+.boton-formulario{
+    background-color: rgb(53, 91, 186);
+    border:none;
+    font-size: 10px;
+    color:white;
+    padding:7px 7px;
+    border-radius: 5px;
+}
+.misma-linea{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*Formulario Login*/
+.boton-form-login{
+    width: 70%;
+    background-color: rgb(53, 91, 186);
+    border:none;
+    font-size: 10px;
+    color:white;
+    border-radius: 5px;
+    padding:7px 7px;
+    transition: all 5s;
+}
+.boton-form-login:hover{
+    background-color:  #0022AA;
+}
+/*Mobile*/
+@media(min-width:576px){
+    /*header*/
+    .main-header-logo-search{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo{
+        flex-grow: 0.5;
+    }
+    .search-bar{
+        flex-grow: 0.5;
+    }
+
+    nav ul{
+        display:none;
+    }
+}
+/*Tablet 768*/
+@media(min-width:768px){
+    /*header*/
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .search-bar{
+        margin-left: 35px;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burguer-button{
+        display: none;
+    }
+    .main-navbar ul{
+        display:flex;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    /*articulos*/
+    .sect-ult-visita{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sect-ult-visita div.art-ultima-visita1{
+        /*ejex*/
+        display: flex;
+    }
+    .sect-ult-visita div.art-ultima-visita2{
+        /*ejex*/
+        display: flex;
+    }
+    .sect-ofertas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .sect-ofertas div.art-ofertas1{
+        display: flex;
+    }
+    .sect-ofertas div.art-ofertas2{
+        display: flex;
+    }
+}
+/*Desktop 1200*/
+@media(min-width:1200px){
+     /*header*/
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+    }
+    .search-bar{
+        display: flex;
+    }
+    .copy-header{
+        display: flex;
+        max-width: 350px;
+    }
+    .burguer-button{
+        display: none;
+    }
+    .main-navbar ul{
+        display:flex;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    /*buguer*/
+    .burguer-button{
+        display: none;
+    }
+    /*articulos*/
+     .main-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .art-ultima-visita{
+        display: flex;
+    }
+    .art-ofertas{
+        display: flex;
+    }
+}
