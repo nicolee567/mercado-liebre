@@ -310,4 +310,16 @@ main{
     .art-ofertas{
         display: flex;
     }
+    /*footer*/
+    .footer-iconos{
+        border:green 3px solid;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer-box{
+        border:red 2px solid;
+    }
+    .icon-footer:hover{
+        color:rgb(123, 154, 234);
+    }
 }
